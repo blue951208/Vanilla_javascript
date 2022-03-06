@@ -12,21 +12,21 @@ let person = {
 };
 // Object 데이터 변경시
 person["name"] = 'SonDon';
-console.log("name2 : ",person["name"]);
+// console.log("name2 : ",person["name"]);
 
 person.name = 'SonDonHyun';
-console.log("name3 : ",person.name);
+// console.log("name3 : ",person.name);
 
 // 변수에 데이터 타입 확인시
 var type = typeof person;
-console.log("type : ",type);
+// console.log("type : ",type);
 
 /*
     84p, for-in
     for-in 은 객체내 키 값의 수만큼 실행한다.
 */
 for (const key in person) {
-    console.log("key : ",key);
+    // console.log("key : ",key);
 }
 
 /*
@@ -35,5 +35,5 @@ for (const key in person) {
 */
 const term = "Vanilla_Js";
 for (const x of term) {
-    console.log("x : ",x);
+    // console.log("x : ",x);
 }

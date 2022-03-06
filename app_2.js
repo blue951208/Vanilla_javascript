@@ -14,4 +14,5 @@ function hap(p1, p2) {
 // 93p, Function 생성자 함수
 let sum = new Function("p1","p2", "return p1 + p2;");
 
-console.log("sum : ",sum(1,3));
+// console.log("sum : ",sum(1,3));
+// : 4

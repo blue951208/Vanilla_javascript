@@ -40,3 +40,33 @@ console.log("substring : ",doubleTxt.substring(9,11));
 */
 console.log("substr : ",doubleTxt.substr(9,2));
 // a
+
+/*
+    .replace(p1,p2) : p1에 해당하는 문자열을 p2로 변경 처음위치 1번만
+    +) 대소문자를 구분한다, 구분없이 하기 위해서는 정규식 사용
+*/
+let str = "Vanilla_Javascript_develop";
+console.log("replace : ",str.replace("develop","Practice"));
+// Vanilla_Javascript_Practice
+
+/*
+    /DEVELOP/i 에서 /~/ 는 찾고자 하는 문자열
+    i 는 insentive의 약자로 대소문자를 구분하지 않는다는 의미.
+*/  
+console.log("replace_정규식-i : ",str.replace(/DEVELOP/i, "Practice"));
+// Vanilla_Javascript_Practice
+
+/*
+    /~/g 에서 g는 문자열 전체에서 
+    해당하는 모든 문자열을 대체문자열로변경
+*/
+let str2 = "Vanilla_Javascript_develop develop";
+console.log("replace_정규식-g : ",str2.replace(/DEVELOP/gi, "Practice"));
+// Vanilla_Javascript_Practice Practice
+
+/*
+    .toUpperCase() : 문자를 대문자로,
+    .toLowerCase() : 문자를 소문자로
+*/
+let str3 = "hello_world";
+console.log("uppercase : ",str3.toUpperCase());

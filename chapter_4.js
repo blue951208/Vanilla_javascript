@@ -70,3 +70,37 @@ console.log("replace_정규식-g : ",str2.replace(/DEVELOP/gi, "Practice"));
 */
 let str3 = "hello_world";
 console.log("uppercase : ",str3.toUpperCase());
+
+/*
+    .concat() : 문자열 합치기
+*/
+let txt1 = "txt1";
+let txt2 = txt1.concat(" ","concat String");
+console.log("txt2 : ",txt2);
+// txt1 concat String
+
+/*
+    .trim() : 문자열 앞뒤 공백 제거
+*/
+let trim_txt = "   앞뒤 공백 문자열   ";
+console.log("txt      : ",trim_txt);
+console.log("txt_trim : ",trim_txt.trim());
+// 앞뒤 공백 문자열
+
+/*
+    .padStart(p1,p2) : 첫번째 파라미터는 총 문자열 길이, 두번째 파라미터는 추가할 문자
+                       지정한 문자열에서 남은 길이 만큼 추가할 문자로 채운다.(앞에)
+    .padEnd(p1,p2)   : (뒤에)
+*/
+let pad_txt = "s";
+console.log("padStart : ",pad_txt.padStart(4,"12"));
+// 121s
+console.log("padEnd   : ",pad_txt.padEnd(4,"12"));
+// s121
+
+/*
+    .charAt(p1) : 파라미터 인덱스에 해당하는 문자 한개를 반환
+*/
+let chartAt_txt = "charAt_txt";
+console.log("charAt-6 : ",chartAt_txt.charAt(6));
+// _

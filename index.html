@@ -7,10 +7,46 @@
     <link rel="stylesheet" href="style.css"/>
     <title>Vanilla</title>
 </head>
+<script>
+    /*
+        prompt : 텍스트를 입력하고 입력한 텍스트를 return
+    */
+    // let txt = prompt("prompt 입력");
+    // alert("prompt_txt : "+txt);
+    
+    /*
+        setTimeout(function,p1) : p1에 시간을 지정
+        지정된 시간이 지나면 함수가 실행
+        1000 이 1초이다
+    */
+    // setTimeout(function() {
+    //     alert("5초 지남");
+    // },5000);
+
+    /*
+        setInterval : 지정된 시간 단위로 계속 실행
+        .clearInterval(fnc_nm) : setInterval 을 종료 실행중인 함수명을 파라미터로
+    */
+    var i = 0;
+    let fnc = setInterval(function() {
+        i++;
+        console.log("i : "+i);
+        if (i == 2) {
+            clearInterval(fnc);
+        }
+    },5000)
+
+</script>
 <body>
     <!-- <script src="app.js"></script> -->
     <!-- <script src="app_2.js"></script> -->
     <!-- 쳅터4 -->
     <script src="array.js"></script>
+
+    <h2>Window객체</h2>
+
+    <!-- <button name="a" onclick="alert_f">Alert</button> -->
+    <!-- <button name="c" onclick="confirm_f">confirm</button>
+    <button name="p" onclick="prompt_f">prompt</button> -->
 </body>
 </html>

@@ -36,6 +36,15 @@
         }
     },5000)
 
+    function test(...param) {
+        // 파라미터가 지정되어 있지 않은 경우 ...파라미터명
+        // 으로 지정하면 원하는 만큼 파라미터를 설정할수 있다.
+        // 파라미터는 배열로 저장된다.
+        for (let x of param) {
+            console.log("x : ",x);
+        }
+    }
+
 </script>
 <body>
     <!-- <script src="app.js"></script> -->

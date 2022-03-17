@@ -45,6 +45,28 @@
         }
     }
 
+    let name = "쏜동현";
+    console.log("name : "+`${name}`);
+    //  `를 사용하면 ${변수명} 으로 값을 출력가능
+
+    // 배열 분해 재사용
+    let arr1 = [1,2,3];
+    let arr2 = [4,5,6];
+    let arr3 = [...arr1, ...arr2];
+    console.log("arr1 : "+[...arr3]); // 1,2,3,4,5,6
+
+    let person = {
+        name: "son",
+        age: 28,
+        phone : '01093319753',
+    }
+
+    // Object 에서 일부 뽑아 쓰기
+    // { } 안에 키값으로 정의시 해당 키에 값을 추출해서 사용가능
+    let {age, phone} = person;
+    console.log("age : ",age);
+    console.log("phone : ",phone);
+
 </script>
 <body>
     <!-- <script src="app.js"></script> -->

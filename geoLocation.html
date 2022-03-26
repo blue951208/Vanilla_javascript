@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    >
+    <title>Geo_Location</title>
+</head>
+<script>
+    if ('geolocation' in navigator) {
+        console.log("위치정보 사용 가능");
+        // .getCurrentPosition : 현재위치
+        // .watchPosition : 이동중일때 위치정보가 바뀐경우 위치정보
+        navigator.geolocation.getCurrentPosition((position) => {
+            const latitude  = position.coords.latitude; // 위도
+            const longitude = position.coords.longitude; // 경도
+            console.log("위도 : "+latitude + " / 경도 : "+longitude);
+        });
+    } else {
+        console.log("위치정보 사용 불가능");
+    }
+</script>
+<body>
+    <h1>Geolocation API</h1>
+
+</body>
+</html>

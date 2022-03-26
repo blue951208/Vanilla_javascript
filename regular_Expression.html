@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Vanilla</title>
+</head>
+<script>
+    // 정규식 만들기 
+    // 1. '/'로 감싼다.
+    var regExp = /check/; 
+    regExp = /^check$/; 
+    // ^는 문자에 처음, $는 문자열에 끝
+    // ^는 like '%check', $는 'check%' 같은 역활
+    // 정규식.test(문자열) 패턴에 해당하는 경우 true, 아닌경우 false
+    console.log("패턴이 있는지 체크 : ",regExp.test("check Pattern"));
+
+    // 2.생성자 함수 사용
+    var regExp2 = new RegExp("check");
+
+    // \d 는 숫자
+    // {숫자} : 앞 표현식이 나오는 횟수
+    // {최소숫자,최대숫자} : 최소 몇번,최대 몇번까지 표현식이 나와야한다.
+    var phone_regExp = /^\d{3}-\d{3,4}-\d{4}$/;
+    console.log("핸드폰번호 형식 체크 : ",phone_regExp.test("010-9331-9753"));
+
+
+</script>
+<body>
+    <h1>정규식(Regular_Expression)</h1>    
+</body>
+</html>
